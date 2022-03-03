@@ -1,5 +1,6 @@
 #include <iostream>
 #include <fstream>
+#include <string>
 
 using namespace std;
 
@@ -45,12 +46,12 @@ int main()
 
 void login()
 {
-	int count;
-	//string userId, password, id, pass;
-	char userId[] = "NULL";
+	int count = 0;
+	string userId, password, id, pass;
+	/*char userId[] = "NULL";
 	char password[] = "NULL";
 	char id[] = "NULL";
-	char pass[] = "NULL";
+	char pass[] = "NULL";*/
 	system("cls");
 
 	cout << "\t\t\t Please enter the username and password : " << endl;
@@ -76,16 +77,18 @@ void login()
 		}
 		else {
 			cout << "\n LOGIN ERROR \n Please check your username and password";
+			main();
 		}
 	}
 }
 
 void registration()
 {
-	char ruserId[] = "NULL";
+	string ruserId, rpassword, rid, rpass;
+	/*char ruserId[] = "NULL";
 	char rpassword[] = "NULL";
 	char rid[] = "NULL";
-	char rpass[] = "NULL";
+	char rpass[] = "NULL";*/
 	system("cls");
 	cout << "\t\t\t Enter the username : ";
 	cin >> ruserId;
@@ -114,9 +117,10 @@ void forgot()
 	case 1:
 	{
 		int count = 0;
-		char suserId[] = "NULL";
+		string suserId, sid, spass;
+		/*char suserId[] = "NULL";
 		char sid[] = "NULL";
-		char spass[] = "NULL";
+		char spass[] = "NULL";*/
 		cout << "\n\t\t\t Enter the username which you rememberd : ";
 		cin >> suserId;
 
